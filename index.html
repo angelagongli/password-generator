@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Password Generator</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-2 offset-md-3"></div>
+            <div class="col-8 col-md-6">
+                <img class="key-img" src="assets/images/key-solid.svg">
+            </div>
+            <div class="offset-2 offset-md-3"></div>
+        </div>
+
+        <div class="container main-content">
+            <div class="row">
+                <div class="col-12">
+                    <h3>Generate a Password</h3>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-12">
+                    <div class="textarea-container">
+                        <textarea spellcheck="false" readonly placeholder="Your Secure Password"></textarea>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-12 button-container">
+                    <button id="generate-password">Generate Password</button>
+                    <button id="copy-to-clipboard">Copy to Clipboard</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer mt-auto py-3">
+            <div class="container">
+                <span class="footer-text">Copyright &copy;</span>
+            </div>
+        </footer>
+    </div>
+        
+    <script type="text/javascript" src="assets/javascript/password-generator.js"></script>
+</body>
+</html>

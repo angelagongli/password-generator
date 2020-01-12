@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.key-img {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.main-content {
+    padding: 50px;
+    box-shadow: 0px 0px 20px #c0c7cf;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.textarea-container {
+    border-bottom: 2px solid #dddddd;
+    border-top: 2px solid #dddddd;
+    padding: 10px 0px;
+    margin: 20px 0px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    text-align: center;
+    border: dashed 2px #cccccc;
+    margin: 0px;
+    padding: 0px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+button { 
+    font-size: 20px;
+    color: white;
+    background-color: #af0808;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+#copy-to-clipboard {
+    background-color: #c0c7cf;
+}
+
+button:hover, #copy-to-clipboard:hover {
+    background-color: #000000;
+}
+
+footer {
+    text-align: center;
+}
+
+
+/* modify font styling and button positioning on smaller screen widths */
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    
+    .button-container {
+        padding: 0px 20px;
+    }
+
+    button { 
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .button-container {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+    }
+
+    button { 
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+}
